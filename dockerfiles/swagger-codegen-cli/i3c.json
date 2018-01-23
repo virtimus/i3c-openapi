@@ -1,0 +1,2 @@
+#/i run swagger-codegen-cli generate -i http://petstore.swagger.io/v2/swagger.json -l go -o /data/go
+{}

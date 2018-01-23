@@ -1,0 +1,10 @@
+FROM swaggerapi/swagger-codegen-cli
+
+COPY c3c.sh /
+RUN chmod a+x /c3c.sh \
+	&& ln -s /c3c.sh /c
+	
+COPY run.sh /
+RUN chmod a+x /run.sh
+
+CMD ["help"]	
